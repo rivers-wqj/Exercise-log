@@ -29,6 +29,16 @@
             text-align: left;
             white-space: nowrap; /* 标题和内容都不换行 */
         }
+        /* 让表格中的Notes内容可以换行 */
+        td.notes-cell {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        /* 调整标题的字号 */
+        h2 {
+            font-size: 26px; /* 修改为你希望的字号大小 */
+        }
 </style>
 </head>
 <body>
@@ -59,7 +69,7 @@
                         <td>Full body & Abb</td>
                         <td>60 minutes</td>
                         <td>70.0kg</td>
-                        <td>运动来源：EmiWong+Madfit<br>果然，只有椅子操的话强度太低了，要出汗还是得换。<br>腹部训练的话现在这个够用，只需要把动作做得越来越到位。
+                        <td class="notes-cell">运动来源：EmiWong+Madfit<br>果然，只有椅子操的话强度太低了，要出汗还是得换。<br>腹部训练的话现在这个够用，只需要把动作做得越来越到位。
                    </tr>
                    <tr>
                         <td>2024-02-20</td>
