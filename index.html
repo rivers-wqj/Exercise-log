@@ -5,8 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rivers‘ Exercise-Log</title>
  <style> 
+        body {
+             display: flex;
+             flex-direction: column;
+             min-height: 100vh; /* 保证整个内容占据至少一屏的高度 */
+        }
         main {
-            margin-bottom: 400px; /* 根据需要调整距离底部的间距 */
+            flex-grow: 1;
+            margin-bottom: 500px; /* 根据需要调整距离底部的间距 */
+        }
+       header {
+            page-break-before: always;
+            align-self: start; /* 将 header 放在起始位置，保证 header 单独一列 */
         }
         /* 居中显示的容器样式 */
         .center-container {
@@ -69,10 +79,7 @@
             padding: 8px;
             margin-top: 20px
         }
-         
-     header {
-                page-break-before: always;
-            }
+
 </style>
 </head>
 <body>
